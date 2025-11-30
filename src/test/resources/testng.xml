@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="HackerNews API Test Suite" parallel="false" thread-count="1">
+    <test name="Positive API Tests">
+        <classes>
+            <class name="com.hackernews.tests.PositiveApiTest"/>
+        </classes>
+    </test>
+
+    <test name="Story-Comment Edge Case Tests">
+        <classes>
+            <class name="com.hackernews.tests.StoryCommentEdgeCaseTest"/>
+        </classes>
+    </test>
+
+    <test name="Pagination API Tests">
+        <classes>
+            <class name="com.hackernews.tests.PaginationApiTest"/>
+        </classes>
+    </test>
+
+    <test name="Negative API Tests">
+        <classes>
+            <class name="com.hackernews.tests.NegativeApiTest"/>
+        </classes>
+    </test>
+</suite>
